@@ -1,0 +1,93 @@
+Index: src/ru/mirea/task1/Factorial.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/ru/mirea/task1/Factorial.java	(date 1639563528310)
++++ src/ru/mirea/task1/Factorial.java	(date 1639563528310)
+@@ -0,0 +1,20 @@
++package ru.mirea.task1;
++import java.util.Scanner;
++public class Factorial {
++    public int s;
++    Scanner a = new Scanner(System.in);
++    int n = a.nextInt();
++    public void Fact(){
++        s = n;
++        while (n>1){
++            s = s*(n-1);
++            n--;
++        }
++        System.out.println(s);
++    }
++    public static void main(String[] args){
++        Factorial ob1 = new Factorial();
++        ob1.Fact();
++
++    }
++}
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 026e1408d20e5f23adcb7ec25c9fc145adb253fe)
++++ .idea/misc.xml	(date 1639563150325)
+@@ -1,12 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="EntryPointsManager">
+-    <entry_points version="2.0" />
+-  </component>
+   <component name="ProjectKey">
+     <option name="state" value="project://e2804f05-5315-4fc6-a121-c522a6c26470" />
+   </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" default="true" project-jdk-name="openjdk-16" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="true" project-jdk-name="15" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: src/ru/mirea/task1/Array.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/ru/mirea/task1/Array.java	(date 1639563308626)
++++ src/ru/mirea/task1/Array.java	(date 1639563308626)
+@@ -0,0 +1,33 @@
++package ru.mirea.task1;
++public class Array {
++    public int i = 0;
++    public double s = 0;
++    public int[] arr = new int[]{10, 12, 13, 132, 45};
++    public void A() {
++        do {
++            s += arr[i];
++            i++;
++        } while (i < arr.length);
++        System.out.println(s);
++    }
++    public void B(){
++        while(i < arr.length){
++            s += arr[i];
++            i++;
++        }
++        s = s/5;
++        System.out.println(s);
++
++    }
++    public void C(){
++        for(int i = 0; i<5; i++){
++            s += arr[i];
++        }
++        System.out.println(s);
++    }
++    public static void main(String [] args){
++        Array d1 = new Array();
++        d1.B();
++    }
++
++}
+\ No newline at end of file
