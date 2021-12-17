@@ -1,14 +1,14 @@
 package ru.mirea.task14.op2;
 import javafx.animation.FadeTransition;
-    import javafx.application.Application;
+import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 import javafx.util.Duration;
-import ru.mirea.task14.op2.Card;
-import ru.mirea.task14.op2.Deck;
+import ru.mirea.task14.opt2.Card;
+import ru.mirea.task14.opt2.Deck;
 
 import java.util.LinkedList;
 import java.util.Queue;
@@ -60,7 +60,7 @@ public class TestCardGame extends Application {
     }
 
     @Override
-    public void start(@org.jetbrains.annotations.NotNull Stage stage) throws Exception {
+    public void start(Stage stage) throws Exception {
         Deck deck = new Deck(sizeOfDeck);
         Deck d1 = new Deck(sizeOfDeck/2);
         Deck d2 = new Deck(sizeOfDeck/2);
